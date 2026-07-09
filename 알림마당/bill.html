@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>청구명세서 | 더케어 재가복지센터</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <div>
+        <div class="logo-text">더케어 재가복지센터</div>
+        <div class="logo-sub">TheCare Home Care Welfare Center</div>
+      </div>
+    </a>
+
+    <ul class="gnb">
+      <li>
+        <a href="../기관소개/greeting.html">기관소개</a>
+        <ul class="dropdown">
+          <li><a href="../기관소개/greeting.html">인사말</a></li>
+          <li><a href="../기관소개/facility.html">시설안내</a></li>
+          <li><a href="../기관소개/history.html">기관현황</a></li>
+          <li><a href="../기관소개/location.html">오시는길</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../서비스안내/insurance.html">서비스안내</a>
+        <ul class="dropdown">
+          <li><a href="../서비스안내/insurance.html">노인장기요양보험</a></li>
+          <li><a href="../서비스안내/service.html">요양서비스</a></li>
+          <li><a href="../서비스안내/family.html">가족지원서비스</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../비용및상담/process.html">비용및상담신청</a>
+        <ul class="dropdown">
+          <li><a href="../비용및상담/process.html">장기요양 신청절차</a></li>
+          <li><a href="../비용및상담/cost.html">서비스 비용</a></li>
+          <li><a href="../비용및상담/counsel.html">상담신청</a></li>
+        </ul>
+      </li>
+      <li class="active">
+        <a href="album.html">알림마당</a>
+        <ul class="dropdown">
+          <li><a href="album.html">프로그램 참여 앨범</a></li>
+          <li><a href="monthly.html">월 급여제공 내용</a></li>
+          <li><a href="bill.html">청구명세서</a></li>
+          <li><a href="newsletter.html">가정통신문</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<!-- 페이지 상단 배너 -->
+<div class="page-banner">
+  <div class="banner-text">
+    <h2>청구명세서</h2>
+    <p>알림마당 &gt; 청구명세서</p>
+  </div>
+</div>
+
+<!-- 본문 영역 -->
+<div class="content-wrap">
+  <div class="container">
+    <div class="content-layout">
+
+      <!-- 왼쪽 서브메뉴 -->
+      <div class="sub-menu">
+        <div class="sub-menu-title">알림마당</div>
+        <ul>
+          <li><a href="album.html">프로그램 참여 앨범</a></li>
+          <li><a href="monthly.html">월 급여제공 내용</a></li>
+          <li class="active"><a href="bill.html">청구명세서</a></li>
+          <li><a href="newsletter.html">가정통신문</a></li>
+        </ul>
+      </div>
+
+      <!-- 오른쪽 콘텐츠 -->
+      <div class="content-body">
+        <h3 class="content-title">청구명세서</h3>
+
+        <div class="insurance-intro">
+          <p>
+            「노인장기요양보험법」 제40조제1항 및 같은 법 시행령 제15조의8에 따라,
+            재가급여를 이용하시는 어르신은 급여비용의 100분의 15를 본인부담금으로 납부하시며,
+            더케어 재가복지센터는 매월 청구명세서를 통해 공단부담금과 본인부담금 내역을
+            투명하게 안내해드리고 있습니다.
+          </p>
+        </div>
+
+        <h4 class="section-sub-title">청구명세서 예시 (샘플)</h4>
+
+        <table class="info-table">
+          <tr>
+            <th>서비스 항목</th>
+            <th>제공횟수</th>
+            <th>급여비용</th>
+            <th>공단부담금(85%)</th>
+            <th>본인부담금(15%)</th>
+          </tr>
+          <tr>
+            <td>방문요양 (신체활동지원)</td>
+            <td>8회</td>
+            <td>800,000원</td>
+            <td>680,000원</td>
+            <td>120,000원</td>
+          </tr>
+          <tr>
+            <td>방문요양 (가사활동지원)</td>
+            <td>4회</td>
+            <td>320,000원</td>
+            <td>272,000원</td>
+            <td>48,000원</td>
+          </tr>
+          <tr>
+            <td>방문목욕</td>
+            <td>2회</td>
+            <td>180,000원</td>
+            <td>153,000원</td>
+            <td>27,000원</td>
+          </tr>
+          <tr>
+            <td><strong>합계</strong></td>
+            <td>-</td>
+            <td><strong>1,300,000원</strong></td>
+            <td><strong>1,105,000원</strong></td>
+            <td><strong>195,000원</strong></td>
+          </tr>
+        </table>
+
+        <p style="font-size:13px; color:#999; text-align:right; margin-bottom:40px;">
+          ※ 위 표는 실제 이용자 정보가 아닌 예시이며, 본인부담률은 감경 대상 여부에 따라
+          9%, 6%, 0%로 달라질 수 있습니다 (「장기요양 본인부담금 감경에 관한 고시」에 따름).
+        </p>
+
+        <h4 class="section-sub-title">본인부담금이 궁금하거나 이상하다고 느껴지신다면</h4>
+
+        <div class="grade-wrap">
+          <div class="grade-item">
+            <div class="grade-num">확인 요청 권리</div>
+            <p>수급자는 본인부담금이 적정한지, 비급여대상인지를 국민건강보험공단에 확인 요청할 수 있습니다.</p>
+          </div>
+          <div class="grade-item">
+            <div class="grade-num">과다 청구 시</div>
+            <p>과다하게 납부된 본인부담금은 공단을 통해 확인 후 환급받으실 수 있습니다.</p>
+          </div>
+          <div class="grade-item">
+            <div class="grade-num">부당 면제·할인 금지</div>
+            <p>영리 목적의 본인부담금 면제·할인은 불법이며, 정해진 절차 외에는 적용되지 않습니다.</p>
+          </div>
+        </div>
+
+        <p style="font-size:14px; color:#666; margin-top:10px;">
+          ※ 근거 : 「노인장기요양보험법」 제40조제2항(의료급여 수급자 면제), 제35조제5항(부당 면제·할인 금지),
+          「노인장기요양보험법 시행규칙」 제33조(확인 요청), 제33조제3항(과다본인부담금 환급)
+        </p>
+
+        <div style="text-align:center; margin-top:50px;">
+          <a href="../비용및상담/counsel.html" class="intro-btn">📝 상담 신청하기</a>
+        </div>
+
+      </div>
+      <!-- content-body 닫기 -->
+
+    </div>
+    <!-- content-layout 닫기 -->
+  </div>
+  <!-- container 닫기 -->
+</div>
+<!-- content-wrap 닫기 -->
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-info">
+      <div class="footer-logo">더케어 재가복지센터</div>
+      <p>대표자 : 정소희</p>
+      <p>주소 : 부산광역시 사상구 모라로 90-6</p>
+    </div>
+    <div class="footer-contact">
+      <div class="footer-tel">010-8976-5815</div>
+      <p>평일 09:00 ~ 18:00</p>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 더케어 재가복지센터. All rights reserved.</div>
+</footer>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

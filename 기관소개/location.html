@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오시는길 — 더케어 재가복지센터</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <a href="../index.html">
+          <div class="logo-text">더케어 재가복지센터</div>
+          <div class="logo-sub">TheCare Home Care Welfare Center</div>
+        </a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <nav>
+        <ul class="gnb">
+          <li>
+            <a href="#">기관소개</a>
+            <ul class="dropdown">
+              <li><a href="greeting.html">인사말</a></li>
+              <li><a href="facility.html">시설안내</a></li>
+              <li><a href="history.html">기관현황</a></li>
+              <li><a href="location.html">오시는길</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">서비스안내</a>
+            <ul class="dropdown">
+              <li><a href="../서비스안내/insurance.html">노인장기요양보험</a></li>
+              <li><a href="../서비스안내/service.html">요양서비스</a></li>
+              <li><a href="../서비스안내/family.html">가족지원서비스</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">비용및 상담신청</a>
+            <ul class="dropdown">
+              <li><a href="../비용및상담/process.html">장기요양 신청절차</a></li>
+              <li><a href="../비용및상담/cost.html">서비스 비용</a></li>
+              <li><a href="../비용및상담/counsel.html">상담신청</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">알림마당</a>
+            <ul class="dropdown">
+              <li><a href="../알림마당/album.html">프로그램 참여 앨범</a></li>
+              <li><a href="../알림마당/monthly.html">월 급여제공 내용</a></li>
+              <li><a href="../알림마당/bill.html">청구명세서</a></li>
+              <li><a href="../알림마당/newsletter.html">가정통신문</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="banner-text">
+      <h2>오시는길</h2>
+      <p>기관소개 &gt; 오시는길</p>
+    </div>
+  </section>
+
+  <div class="content-wrap">
+    <div class="container">
+      <div class="content-layout">
+
+        <aside class="sub-menu">
+          <div class="sub-menu-title">기관소개</div>
+          <ul>
+            <li><a href="greeting.html">인사말</a></li>
+            <li><a href="facility.html">시설안내</a></li>
+            <li><a href="history.html">기관현황</a></li>
+            <li class="active"><a href="location.html">오시는길</a></li>
+          </ul>
+        </aside>
+
+        <div class="content-body">
+          <h3 class="content-title">오시는길</h3>
+
+          <!-- 카카오맵 -->
+          <div class="map-wrap">
+            <iframe
+              src="https://map.kakao.com/link/map/더케어재가복지센터,35.1781,128.9845/embed"
+              width="100%"
+              height="400"
+              style="border:0; border-radius:8px;"
+              allowfullscreen="">
+            </iframe>
+          </div>
+
+          <!-- 주소 및 교통편 -->
+          <div class="location-info">
+            <div class="location-item">
+              <div class="location-icon">📍</div>
+              <div>
+                <h4>주소</h4>
+                <p>부산광역시 사상구 모라로 90-6</p>
+                <p>(모라1동 행정복지센터 건너편)</p>
+              </div>
+            </div>
+            <div class="location-item">
+              <div class="location-icon">🚌</div>
+              <div>
+                <h4>버스 이용시</h4>
+                <p>모라1동 행정복지센터 정류장 하차</p>
+                <p>123, 126, 138번 버스 이용</p>
+              </div>
+            </div>
+            <div class="location-item">
+              <div class="location-icon">🚇</div>
+              <div>
+                <h4>지하철 이용시</h4>
+                <p>2호선 모덕역 하차 후 도보 10분</p>
+              </div>
+            </div>
+            <div class="location-item">
+              <div class="location-icon">🚗</div>
+              <div>
+                <h4>자가용 이용시</h4>
+                <p>네이버/카카오맵에서 "더케어 재가복지센터" 검색</p>
+                <p>건물 앞 주차 가능</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">더케어 재가복지센터</div>
+        <div class="footer-info">
+          <p>주소 : 부산광역시 사상구 모라로 90-6</p>
+          <p>대표자 : 정소희</p>
+          <p>운영시간 : 평일 09:00 ~ 18:00</p>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <div class="footer-tel">📞 010-8976-5815</div>
+        <p style="font-size:13px; color:rgba(255,255,255,0.6);">언제든지 연락주세요</p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © 2024 더케어 재가복지센터. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>가정통신문 | 더케어 재가복지센터</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+  /* newsletter.html 전용 - 공지 목록 스타일 */
+  .notice-list{ border-top:2px solid #2E6B9E; }
+  .notice-item{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    padding:18px 10px;
+    border-bottom:1px solid #eee;
+  }
+  .notice-item:hover{ background-color:#F9F5F0; }
+  .notice-tag{
+    flex-shrink:0;
+    font-size:12px;
+    font-weight:500;
+    padding:4px 10px;
+    border-radius:20px;
+    background-color:#F5EFE6;
+    color:#E8834A;
+  }
+  .notice-tag.important{
+    background-color:#2E6B9E;
+    color:#fff;
+  }
+  .notice-title{
+    flex:1;
+    font-size:15px;
+    color:#333;
+  }
+  .notice-date{
+    flex-shrink:0;
+    font-size:13px;
+    color:#999;
+  }
+  @media (max-width:768px){
+    .notice-item{ flex-wrap:wrap; }
+    .notice-title{ width:100%; order:3; margin-top:6px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <div>
+        <div class="logo-text">더케어 재가복지센터</div>
+        <div class="logo-sub">TheCare Home Care Welfare Center</div>
+      </div>
+    </a>
+
+    <ul class="gnb">
+      <li>
+        <a href="../기관소개/greeting.html">기관소개</a>
+        <ul class="dropdown">
+          <li><a href="../기관소개/greeting.html">인사말</a></li>
+          <li><a href="../기관소개/facility.html">시설안내</a></li>
+          <li><a href="../기관소개/history.html">기관현황</a></li>
+          <li><a href="../기관소개/location.html">오시는길</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../서비스안내/insurance.html">서비스안내</a>
+        <ul class="dropdown">
+          <li><a href="../서비스안내/insurance.html">노인장기요양보험</a></li>
+          <li><a href="../서비스안내/service.html">요양서비스</a></li>
+          <li><a href="../서비스안내/family.html">가족지원서비스</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../비용및상담/process.html">비용및상담신청</a>
+        <ul class="dropdown">
+          <li><a href="../비용및상담/process.html">장기요양 신청절차</a></li>
+          <li><a href="../비용및상담/cost.html">서비스 비용</a></li>
+          <li><a href="../비용및상담/counsel.html">상담신청</a></li>
+        </ul>
+      </li>
+      <li class="active">
+        <a href="album.html">알림마당</a>
+        <ul class="dropdown">
+          <li><a href="album.html">프로그램 참여 앨범</a></li>
+          <li><a href="monthly.html">월 급여제공 내용</a></li>
+          <li><a href="bill.html">청구명세서</a></li>
+          <li><a href="newsletter.html">가정통신문</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<!-- 페이지 상단 배너 -->
+<div class="page-banner">
+  <div class="banner-text">
+    <h2>가정통신문</h2>
+    <p>알림마당 &gt; 가정통신문</p>
+  </div>
+</div>
+
+<!-- 본문 영역 -->
+<div class="content-wrap">
+  <div class="container">
+    <div class="content-layout">
+
+      <!-- 왼쪽 서브메뉴 -->
+      <div class="sub-menu">
+        <div class="sub-menu-title">알림마당</div>
+        <ul>
+          <li><a href="album.html">프로그램 참여 앨범</a></li>
+          <li><a href="monthly.html">월 급여제공 내용</a></li>
+          <li><a href="bill.html">청구명세서</a></li>
+          <li class="active"><a href="newsletter.html">가정통신문</a></li>
+        </ul>
+      </div>
+
+      <!-- 오른쪽 콘텐츠 -->
+      <div class="content-body">
+        <h3 class="content-title">가정통신문</h3>
+
+        <div class="insurance-intro">
+          <p>
+            더케어 재가복지센터가 보호자님들께 전해드리는 소식입니다.
+            프로그램 안내, 건강 정보, 명절·휴무 안내 등을 확인하실 수 있습니다.
+          </p>
+        </div>
+
+        <div class="notice-list">
+
+          <div class="notice-item">
+            <span class="notice-tag important">중요</span>
+            <span class="notice-title">추석 연휴 방문요양 서비스 운영 안내</span>
+            <span class="notice-date">2026.09.20</span>
+          </div>
+
+          <div class="notice-item">
+            <span class="notice-tag">건강정보</span>
+            <span class="notice-title">여름철 어르신 온열질환 예방 안내</span>
+            <span class="notice-date">2026.07.05</span>
+          </div>
+
+          <div class="notice-item">
+            <span class="notice-tag">공지</span>
+            <span class="notice-title">2026년 하반기 인지활동 프로그램 일정 안내</span>
+            <span class="notice-date">2026.06.15</span>
+          </div>
+
+          <div class="notice-item">
+            <span class="notice-tag important">중요</span>
+            <span class="notice-title">노인 학대 예방 및 신고 방법 안내</span>
+            <span class="notice-date">2026.05.10</span>
+          </div>
+
+          <div class="notice-item">
+            <span class="notice-tag">건강정보</span>
+            <span class="notice-title">어르신 낙상 예방을 위한 가정 내 안전수칙</span>
+            <span class="notice-date">2026.04.22</span>
+          </div>
+
+          <div class="notice-item">
+            <span class="notice-tag">공지</span>
+            <span class="notice-title">담당 요양보호사 변경 안내</span>
+            <span class="notice-date">2026.03.03</span>
+          </div>
+
+        </div>
+
+        <div style="text-align:center; margin-top:50px;">
+          <a href="../비용및상담/counsel.html" class="intro-btn">📝 상담 신청하기</a>
+        </div>
+
+      </div>
+      <!-- content-body 닫기 -->
+
+    </div>
+    <!-- content-layout 닫기 -->
+  </div>
+  <!-- container 닫기 -->
+</div>
+<!-- content-wrap 닫기 -->
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-info">
+      <div class="footer-logo">더케어 재가복지센터</div>
+      <p>대표자 : 정소희</p>
+      <p>주소 : 부산광역시 사상구 모라로 90-6</p>
+    </div>
+    <div class="footer-contact">
+      <div class="footer-tel">010-8976-5815</div>
+      <p>평일 09:00 ~ 18:00</p>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 더케어 재가복지센터. All rights reserved.</div>
+</footer>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>서비스 비용 | 더케어 재가복지센터</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="../index.html" class="logo">
+      <div>
+        <div class="logo-text">더케어 재가복지센터</div>
+        <div class="logo-sub">TheCare Home Care Welfare Center</div>
+      </div>
+    </a>
+
+    <ul class="gnb">
+      <li>
+        <a href="../기관소개/greeting.html">기관소개</a>
+        <ul class="dropdown">
+          <li><a href="../기관소개/greeting.html">인사말</a></li>
+          <li><a href="../기관소개/facility.html">시설안내</a></li>
+          <li><a href="../기관소개/history.html">기관현황</a></li>
+          <li><a href="../기관소개/location.html">오시는길</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../서비스안내/insurance.html">서비스안내</a>
+        <ul class="dropdown">
+          <li><a href="../서비스안내/insurance.html">노인장기요양보험</a></li>
+          <li><a href="../서비스안내/service.html">요양서비스</a></li>
+          <li><a href="../서비스안내/family.html">가족지원서비스</a></li>
+        </ul>
+      </li>
+      <li class="active">
+        <a href="process.html">비용및상담신청</a>
+        <ul class="dropdown">
+          <li><a href="process.html">장기요양 신청절차</a></li>
+          <li><a href="cost.html">서비스 비용</a></li>
+          <li><a href="counsel.html">상담신청</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../알림마당/album.html">알림마당</a>
+        <ul class="dropdown">
+          <li><a href="../알림마당/album.html">프로그램 참여 앨범</a></li>
+          <li><a href="../알림마당/monthly.html">월 급여제공 내용</a></li>
+          <li><a href="../알림마당/bill.html">청구명세서</a></li>
+          <li><a href="../알림마당/newsletter.html">가정통신문</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  </div>
+</header>
+
+<!-- 페이지 상단 배너 -->
+<div class="page-banner">
+  <div class="banner-text">
+    <h2>서비스 비용</h2>
+    <p>비용 및 상담신청 &gt; 서비스 비용</p>
+  </div>
+</div>
+
+<!-- 본문 영역 -->
+<div class="content-wrap">
+  <div class="container">
+    <div class="content-layout">
+
+      <!-- 왼쪽 서브메뉴 -->
+      <div class="sub-menu">
+        <div class="sub-menu-title">비용및상담신청</div>
+        <ul>
+          <li><a href="process.html">장기요양 신청절차</a></li>
+          <li class="active"><a href="cost.html">서비스 비용</a></li>
+          <li><a href="counsel.html">상담신청</a></li>
+        </ul>
+      </div>
+
+      <!-- 오른쪽 콘텐츠 -->
+      <div class="content-body">
+        <h3 class="content-title">서비스 비용</h3>
+
+        <div class="insurance-intro">
+          <p>
+            장기요양보험 재가급여는 등급별로 정해진 <strong>월 한도액</strong> 안에서 이용할 수 있으며,
+            이 중 대부분은 국민건강보험공단이 부담하고 나머지 일부만 본인이 부담합니다.
+            아래에서 2026년 기준 등급별 한도액과 본인부담률을 확인해보세요.
+          </p>
+        </div>
+
+        <h4 class="section-sub-title">등급별 재가급여 월 한도액 (2026년 기준)</h4>
+
+        <table class="info-table">
+          <tr>
+            <th>등급</th>
+            <th>2025년 한도액</th>
+            <th>2026년 한도액</th>
+          </tr>
+          <tr>
+            <td>1등급</td>
+            <td>2,306,400원</td>
+            <td>2,512,900원</td>
+          </tr>
+          <tr>
+            <td>2등급</td>
+            <td>2,083,400원</td>
+            <td>2,331,200원</td>
+          </tr>
+          <tr>
+            <td>3등급</td>
+            <td>1,455,800원</td>
+            <td>1,528,200원</td>
+          </tr>
+          <tr>
+            <td>4등급</td>
+            <td>1,341,800원</td>
+            <td>1,409,700원</td>
+          </tr>
+          <tr>
+            <td>5등급</td>
+            <td>1,151,100원</td>
+            <td>1,208,900원</td>
+          </tr>
+          <tr>
+            <td>인지지원등급</td>
+            <td>643,200원</td>
+            <td>676,320원</td>
+          </tr>
+        </table>
+
+        <p style="font-size:13px; color:#999; text-align:right; margin-bottom:40px;">
+          자료 : 보건복지부 2026년도 장기요양 등급별 재가급여 월 한도액 고시
+        </p>
+
+        <h4 class="section-sub-title">본인부담률 안내</h4>
+
+        <div class="grade-wrap">
+          <div class="grade-item">
+            <div class="grade-num">일반 대상자 15%</div>
+            <p>재가급여 기준 본인부담률입니다.</p>
+          </div>
+          <div class="grade-item">
+            <div class="grade-num">경감 대상자 9% / 6%</div>
+            <p>소득 하위 구간에 따라 본인부담률이 경감됩니다.</p>
+          </div>
+          <div class="grade-item">
+            <div class="grade-num">기초생활수급자 0원</div>
+            <p>본인부담금이 전액 면제됩니다.</p>
+          </div>
+        </div>
+
+        <p style="font-size:14px; color:#666; margin-top:10px;">
+          ※ 월 한도액을 초과하여 서비스를 이용하면 초과분은 100% 본인이 부담하게 됩니다.
+          본인부담률 경감 대상 여부가 궁금하시면 더케어 재가복지센터로 문의해주세요.
+        </p>
+
+        <div style="text-align:center; margin-top:50px;">
+          <a href="counsel.html" class="intro-btn">📝 상담 신청하기</a>
+        </div>
+
+      </div>
+      <!-- content-body 닫기 -->
+
+    </div>
+    <!-- content-layout 닫기 -->
+  </div>
+  <!-- container 닫기 -->
+</div>
+<!-- content-wrap 닫기 -->
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-info">
+      <div class="footer-logo">더케어 재가복지센터</div>
+      <p>대표자 : 정소희</p>
+      <p>주소 : 부산광역시 사상구 모라로 90-6</p>
+    </div>
+    <div class="footer-contact">
+      <div class="footer-tel">010-8976-5815</div>
+      <p>평일 09:00 ~ 18:00</p>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 더케어 재가복지센터. All rights reserved.</div>
+</footer>
+
+<script src="../script.js"></script>
+
+</body>
+</html>zmffh

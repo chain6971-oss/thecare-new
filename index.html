@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>더케어 재가복지센터</title>
+  <meta name="description" content="부산 사상구 더케어 재가복지센터. 전문 요양보호사가 어르신의 가정을 방문하여 돌봄 서비스를 제공합니다.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <div>
+          <div class="logo-text">더케어 재가복지센터</div>
+          <div class="logo-sub">TheCare Home Care Welfare Center</div>
+        </div>
+      </div>
+
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+      <nav>
+        <ul class="gnb">
+          <li>
+            <a href="#">기관소개</a>
+            <ul class="dropdown">
+              <li><a href="기관소개/greeting.html">인사말</a></li>
+              <li><a href="기관소개/facility.html">시설안내</a></li>
+              <li><a href="기관소개/history.html">기관현황</a></li>
+              <li><a href="기관소개/location.html">오시는길</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">서비스안내</a>
+            <ul class="dropdown">
+              <li><a href="서비스안내/insurance.html">노인장기요양보험</a></li>
+              <li><a href="서비스안내/service.html">요양서비스</a></li>
+              <li><a href="서비스안내/family.html">가족지원서비스</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">비용및 상담신청</a>
+            <ul class="dropdown">
+              <li><a href="비용및상담/process.html">장기요양 신청절차</a></li>
+              <li><a href="비용및상담/cost.html">서비스 비용</a></li>
+              <li><a href="비용및상담/counsel.html">상담신청</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">알림마당</a>
+            <ul class="dropdown">
+              <li><a href="알림마당/album.html">프로그램 참여 앨범</a></li>
+              <li><a href="알림마당/monthly.html">월 급여제공 내용</a></li>
+              <li><a href="알림마당/bill.html">청구명세서</a></li>
+              <li><a href="알림마당/newsletter.html">가정통신문</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인 슬라이더 -->
+  <section class="slider">
+    <div class="slide active">
+      <img src="https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?w=1400&q=80" alt="어르신 돌봄">
+      <div class="slide-text">
+        <h2>어르신의 행복한 일상을<br>저희가 함께합니다</h2>
+        <p>더케어 재가복지센터는 전문 요양보호사가<br>어르신의 가정을 직접 방문하여 돌봄 서비스를 제공합니다.</p>
+        <a href="비용및상담/counsel.html" class="slide-btn">상담 신청하기</a>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=1400&q=80" alt="요양서비스">
+      <div class="slide-text">
+        <h2>전문 요양보호사가<br>함께합니다</h2>
+        <p>국가공인 자격증을 보유한 전문 인력이<br>어르신을 정성껏 돌봐드립니다.</p>
+        <a href="서비스안내/service.html" class="slide-btn">서비스 알아보기</a>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1400&q=80" alt="가족지원">
+      <div class="slide-text">
+        <h2>가족의 따뜻한 마음으로<br>함께하겠습니다</h2>
+        <p>어르신과 가족 모두가 행복할 수 있도록<br>최선을 다해 지원합니다.</p>
+        <a href="기관소개/greeting.html" class="slide-btn">센터 소개 보기</a>
+      </div>
+    </div>
+    <button class="slide-prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="slide-next" onclick="changeSlide(1)">&#10095;</button>
+    <div class="slide-dots">
+      <span class="dot active" onclick="goSlide(0)"></span>
+      <span class="dot" onclick="goSlide(1)"></span>
+      <span class="dot" onclick="goSlide(2)"></span>
+    </div>
+  </section>
+
+  <!-- 빠른 메뉴 -->
+  <section class="quick-menu">
+    <div class="container">
+      <div class="quick-wrap">
+        <a href="서비스안내/insurance.html" class="quick-item">
+          <div class="quick-icon">🏥</div>
+          <div class="quick-title">노인장기요양보험</div>
+          <div class="quick-desc">장기요양보험 안내</div>
+        </a>
+        <a href="서비스안내/service.html" class="quick-item">
+          <div class="quick-icon">🤲</div>
+          <div class="quick-title">요양서비스</div>
+          <div class="quick-desc">방문요양 서비스 안내</div>
+        </a>
+        <a href="비용및상담/process.html" class="quick-item">
+          <div class="quick-icon">📋</div>
+          <div class="quick-title">장기요양 신청절차</div>
+          <div class="quick-desc">신청부터 이용까지</div>
+        </a>
+        <a href="비용및상담/counsel.html" class="quick-item">
+          <div class="quick-icon">📞</div>
+          <div class="quick-title">상담신청</div>
+          <div class="quick-desc">빠른 상담 신청</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 센터 소개 섹션 -->
+  <section class="intro-section">
+    <div class="container">
+      <h2 class="section-title">더케어 재가복지센터</h2>
+      <div class="section-line"></div>
+      <div class="intro-wrap">
+        <div class="intro-text">
+          <h3>어르신의 행복이 저희의 행복입니다</h3>
+          <p>더케어 재가복지센터는 부산광역시 사상구에 위치한 재가복지센터로, 어르신들이 익숙한 가정환경에서 전문적인 돌봄 서비스를 받을 수 있도록 최선을 다하고 있습니다.</p>
+          <p>국가공인 요양보호사 자격증을 보유한 전문 인력이 어르신의 가정을 직접 방문하여 신체활동, 일상생활, 인지활동 등 다양한 서비스를 제공합니다.</p>
+          <a href="기관소개/greeting.html" class="intro-btn">자세히 보기</a>
+        </div>
+        <div class="intro-stats">
+          <div class="stat-item">
+            <div class="stat-num">12+</div>
+            <div class="stat-label">관리 어르신</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">5년+</div>
+            <div class="stat-label">운영 경력</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">자격증 보유</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">24시</div>
+            <div class="stat-label">긴급 연락</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">더케어 재가복지센터</div>
+        <div class="footer-info">
+          <p>주소 : 부산광역시 사상구</p>
+          <p>대표자 : 윤무근</p>
+          <p>운영시간 : 평일 09:00 ~ 18:00</p>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <div class="footer-tel">📞 010-8976-5815</div>
+        <p style="font-size:13px; color:rgba(255,255,255,0.6);">언제든지 연락주세요</p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      © 2024 더케어 재가복지센터. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
