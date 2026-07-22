@@ -117,67 +117,67 @@
 
         <form action="https://formspree.io/f/meeyzyaz" method="POST">
 
-          <div class="form-row">
-            <div class="form-group">
-              <label>신청자 성함</label>
-              <input type="text" placeholder="예: 홍길동">
-            </div>
-            <div class="form-group">
-              <label>연락처</label>
-              <input type="tel" placeholder="010-0000-0000">
-            </div>
-          </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label>신청자 성함</label>
+      <input type="text" name="신청자 성함" placeholder="예: 홍길동" required>
+    </div>
+    <div class="form-group">
+      <label>연락처</label>
+      <input type="tel" name="연락처" placeholder="010-0000-0000" required>
+    </div>
+  </div>
 
-          <div class="form-group">
-            <label>어르신과의 관계</label>
-            <div class="check-group">
-              <label><input type="radio" name="relation"> 본인</label>
-              <label><input type="radio" name="relation"> 자녀</label>
-              <label><input type="radio" name="relation"> 배우자</label>
-              <label><input type="radio" name="relation"> 기타</label>
-            </div>
-          </div>
+  <div class="form-group">
+    <label>어르신과의 관계</label>
+    <div class="check-group">
+      <label><input type="radio" name="관계" value="본인"> 본인</label>
+      <label><input type="radio" name="관계" value="자녀"> 자녀</label>
+      <label><input type="radio" name="관계" value="배우자"> 배우자</label>
+      <label><input type="radio" name="관계" value="기타"> 기타</label>
+    </div>
+  </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label>어르신 연세</label>
-              <input type="text" placeholder="예: 82세">
-            </div>
-            <div class="form-group">
-              <label>장기요양등급</label>
-              <select>
-                <option value="">등급 선택 (모르셔도 괜찮습니다)</option>
-                <option>아직 미신청</option>
-                <option>1등급</option>
-                <option>2등급</option>
-                <option>3등급</option>
-                <option>4등급</option>
-                <option>5등급</option>
-                <option>인지지원등급</option>
-              </select>
-            </div>
-          </div>
+  <div class="form-row">
+    <div class="form-group">
+      <label>어르신 연세</label>
+      <input type="text" name="어르신 연세" placeholder="예: 82세">
+    </div>
+    <div class="form-group">
+      <label>장기요양등급</label>
+      <select name="장기요양등급">
+        <option value="">등급 선택 (모르셔도 괜찮습니다)</option>
+        <option>아직 미신청</option>
+        <option>1등급</option>
+        <option>2등급</option>
+        <option>3등급</option>
+        <option>4등급</option>
+        <option>5등급</option>
+        <option>인지지원등급</option>
+      </select>
+    </div>
+  </div>
 
-          <div class="form-group">
-            <label>희망 서비스</label>
-            <div class="check-group">
-              <label><input type="checkbox"> 방문요양</label>
-              <label><input type="checkbox"> 방문목욕</label>
-              <label><input type="checkbox"> 방문간호</label>
-              <label><input type="checkbox"> 신청절차 문의</label>
-            </div>
-          </div>
+  <div class="form-group">
+    <label>희망 서비스</label>
+    <div class="check-group">
+      <label><input type="checkbox" name="희망서비스_방문요양" value="방문요양"> 방문요양</label>
+      <label><input type="checkbox" name="희망서비스_방문목욕" value="방문목욕"> 방문목욕</label>
+      <label><input type="checkbox" name="희망서비스_방문간호" value="방문간호"> 방문간호</label>
+      <label><input type="checkbox" name="희망서비스_신청절차문의" value="신청절차 문의"> 신청절차 문의</label>
+    </div>
+  </div>
 
-          <div class="form-group">
-            <label>문의 내용</label>
-            <textarea placeholder="궁금하신 점이나 어르신 상태를 편하게 남겨주세요."></textarea>
-          </div>
+  <div class="form-group">
+    <label>문의 내용</label>
+    <textarea name="문의 내용" placeholder="궁금하신 점이나 어르신 상태를 편하게 남겨주세요."></textarea>
+  </div>
 
-          <div style="text-align:center; margin-top:30px;">
-           <button type="submit" class="intro-btn" style="border:none; cursor:pointer; font-family:inherit;">상담 신청하기</button>
-          </div>
+  <div style="text-align:center; margin-top:30px;">
+    <button type="submit" class="intro-btn" style="border:none; cursor:pointer; font-family:inherit;">상담 신청하기</button>
+  </div>
 
-        </form>
+</form>
 
       </div>
       <!-- content-body 닫기 -->
